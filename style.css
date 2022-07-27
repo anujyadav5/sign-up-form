@@ -31,13 +31,12 @@ img {
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    border-bottom: 2px solid rgb(206 124 82);
-    padding-left: 16px;
+    border-bottom: 4px solid rgb(206 124 82);
+    padding-left: 32px;
 }
 
 .form-content {
     grid-row: span 2;
-    padding-left: 16px;
 }
 
 .img-credit {
@@ -57,4 +56,70 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+fieldset {
+    margin: 0px;
+    padding: 1.5rem 25% 3em 32px;
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    border-bottom: 4px solid rgb(206 124 82);
+    box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.2);
+}
+
+input {
+    position: absolute;
+    top: calc(1em + 8px);
+    left: 0px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+}
+
+label {
+    position: relative;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid rgb(206, 124, 82);
+}
+
+input:invalid {
+    outline: none;
+    border: 2px solid red;
+}
+
+button {
+    border: none;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(206, 124, 82);
+    border-radius: 5px;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 16px 0px;
+}
+
+.accountSection {
+    margin-top: 30px;
+    padding-left: 32px;
+}
+
+a {
+    color: rgb(206 124 82);
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
 }
