@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="content">
@@ -22,37 +23,43 @@
             </p>
         </div>
         <div class="form-content">
-            <form action="">
+            <form action="" novalidate>
                 <fieldset>
                     <legend>Sign Up Now!</legend>
                     <label for="firsName">
                         First Name:
-                        <input type="text" id="firstName" name="firstName">
+                        <input type="text" id="firstName" name="firstName" required>
+                        <span></span>
                     </label>
 
                     <label for="lastName">
                         Last Name:
-                        <input type="text" id="lastName" name="lastName">
+                        <input type="text" id="lastName" name="lastName" required>
+                        <span></span>
                     </label>
 
                     <label for="email">
                         E-mail:
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" required>
+                        <span></span>
                     </label>
 
                     <label for="phoneNumber">
                         Phone Number:
                         <input type="text" id="phoneNumber" name="phoneNumber">
+                        <span></span>
                     </label>
 
                     <label for="password">
                         Password:
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" minlength="8" required>
+                        <span></span>
                     </label>
 
                     <label for="confirmPass">
                         Confirm Password:
-                        <input type="password" id="confirmPass" name="confirmPass">
+                        <input type="password" id="confirmPass" name="confirmPass" minlength="8" required>
+                        <span></span>
                     </label>
                 </fieldset>
                 <div class="accountSection">
